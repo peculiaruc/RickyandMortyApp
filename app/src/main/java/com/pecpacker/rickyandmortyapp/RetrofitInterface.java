@@ -7,5 +7,6 @@ import retrofit2.http.GET;
 
 public interface RetrofitInterface {
 
-   
+    @GET("/name")
+    Call<List<NameModel>> getAllNames();
 }

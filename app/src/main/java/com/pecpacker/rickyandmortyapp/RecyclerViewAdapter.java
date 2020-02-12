@@ -6,7 +6,15 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecyclerHolder> {
+
+    List<NameModel> models;
+
+    public RecyclerViewAdapter(List<NameModel> models) {
+        this.models = models;
+    }
 
     @NonNull
     @Override
@@ -21,7 +29,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public int getItemCount() {
-        return 0;
+        return models.size();
     }
 
     public class RecyclerHolder extends RecyclerView.ViewHolder {
