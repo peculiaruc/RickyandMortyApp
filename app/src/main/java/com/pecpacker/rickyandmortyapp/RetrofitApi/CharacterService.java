@@ -1,10 +1,14 @@
-package com.pecpacker.rickyandmortyapp;
+package com.pecpacker.rickyandmortyapp.RetrofitApi;
+
+import com.pecpacker.rickyandmortyapp.RetrofitApi.CharacterAPI;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class RetrofitInstance {
-    public static final String BASE_URL = "https://rickandmortyapi.com/";
+
+public class CharacterService {
+
+    public static final String BASE_URL = "https://rickandmortyapi.com";
     public static Retrofit retrofit;
 
     public static Retrofit getRetrofitInstance() {
@@ -20,6 +24,9 @@ public class RetrofitInstance {
     }
 
 
+    public CharacterAPI create(Class<CharacterAPI> retrofitInterfaceClass) {
+        return null;
+    }
 }
 
 
