@@ -49,6 +49,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 .into(holder.image);
 
         holder.charName.setText(mCharName.getResults().get(position).getName());
+        
         holder.parentlayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
