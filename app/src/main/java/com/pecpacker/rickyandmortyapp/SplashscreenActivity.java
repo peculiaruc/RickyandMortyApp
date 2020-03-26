@@ -24,9 +24,9 @@ public class SplashscreenActivity extends AppCompatActivity {
             public void run() {
                 /*Intent*/
 
-                Intent intent = new Intent(SplashscreenActivity.this, MainActivity.class);
-                SplashscreenActivity.this.startActivity(intent);
-                SplashscreenActivity.this.finish();
+                Intent intent = new Intent(SplashscreenActivity.this, com.pecpacker.rickyandmortyapp.MainActivity.class);
+                startActivity(intent);
+                finish();
             }
         }, SPLASH_DISPLAY_LENGTH);
 

@@ -38,8 +38,8 @@ dependencies {
 
     // Retrofit
 
-    implementation "com.android.support:design:$supportVersion"
-    implementation "android.arch.lifecycle:extensions:$lifeCycleExtensionVersion"
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
 
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
